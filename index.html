@@ -123,45 +123,35 @@
       </div>
     </section>
 
-    <section id="registration" class="section registration-section">
-      <div class="registration-card">
-        <div>
-          <p class="section-label">Apply</p>
-          <h2>Registration</h2>
+    <section id="register" class="section registration-section">
+      <div class="container">
+        <p class="section-kicker">Apply</p>
+        <h2>Registration</h2>
+    
+        <p>
+          Please submit your information, CV, and advisor endorsement. Applications
+          will be reviewed by the organizing committee.
+        </p>
+    
+        <div class="registration-card">
           <p>
-            Please submit your information, CV, and advisor endorsement. Applications will be reviewed by the organizing committee.
+            Applications are collected through Google Forms. The form asks for your
+            name, university, advisor information, CV, and advisor endorsement.
           </p>
-          <p class="form-note">
-            This form is ready for static-site deployment. To collect submissions, replace the <code>action</code> value with a service endpoint such as Google Forms, Formspree, Airtable, or a custom backend.
+    
+          <a
+            class="button primary-button"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc3lJ_sK_ytDnSN5bAgrmNkm6wMQ06uwjJP7IWc-KEuwo9XTw/viewform"
+            target="_blank"
+            rel="noopener"
+          >
+            Register / Apply
+          </a>
+    
+          <p class="small-text">
+            Please prepare your CV and advisor endorsement before starting the form.
           </p>
         </div>
-        <form class="registration-form" action="#" method="post" enctype="multipart/form-data">
-          <label>
-            Name
-            <input type="text" name="name" autocomplete="name" required />
-          </label>
-          <label>
-            University
-            <input type="text" name="university" autocomplete="organization" required />
-          </label>
-          <label>
-            Advisor
-            <input type="text" name="advisor" required />
-          </label>
-          <label>
-            CV
-            <input type="file" name="cv" accept=".pdf,.doc,.docx" required />
-          </label>
-          <label>
-            Advisor endorsement
-            <textarea name="advisor_endorsement" rows="5" placeholder="Paste endorsement text or upload a file below." required></textarea>
-          </label>
-          <label>
-            Advisor endorsement file, optional
-            <input type="file" name="endorsement_file" accept=".pdf,.doc,.docx" />
-          </label>
-          <button class="button primary submit" type="submit">Submit registration</button>
-        </form>
       </div>
     </section>
   </main>
