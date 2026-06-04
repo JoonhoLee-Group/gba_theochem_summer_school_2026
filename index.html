@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boston Theoretical Chemistry Summer School 2026</title>
+  <meta name="description" content="Boston Theoretical Chemistry Summer School, August 17-21, 2026. A week-long program in electronic structure, quantum information, statistical mechanics, quantum dynamics, biosimulations, and machine learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top">Boston TheoChem Summer School</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#instructors">Instructors</a>
+        <a href="#program">Program</a>
+        <a href="#registration">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="eyebrow">August 17-21, 2026 · Boston, MA</p>
+        <h1>Boston Theoretical Chemistry Summer School</h1>
+        <p class="hero-copy">
+          A week-long intensive summer school for students and researchers interested in modern theoretical chemistry, spanning electronic structure, quantum information, statistical mechanics, quantum dynamics, biosimulations, and machine learning.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#registration">Register</a>
+          <a class="button secondary" href="#program">View program</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section split">
+      <div>
+        <p class="section-label">Overview</p>
+        <h2>Training the next generation of theoretical chemists</h2>
+      </div>
+      <div class="section-copy">
+        <p>
+          The Boston Theoretical Chemistry Summer School brings together leading instructors from Harvard and MIT for five days of lectures, discussions, and hands-on learning. The school is designed to give participants a broad view of contemporary theoretical chemistry while building practical intuition across complementary fields.
+        </p>
+        <p>
+          Participants will engage with core concepts and current research directions in four focus areas: electronic structure and quantum information, statistical mechanics, quantum dynamics, and biosimulations with machine learning.
+        </p>
+      </div>
+    </section>
+
+    <section id="instructors" class="section">
+      <div class="section-heading">
+        <p class="section-label">Faculty</p>
+        <h2>Instructors</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">Ψ</div>
+          <h3>Joonho Lee</h3>
+          <p class="affiliation">Harvard University</p>
+          <p>Electronic structure and quantum information</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">β</div>
+          <h3>Adam Willard</h3>
+          <p class="affiliation">Massachusetts Institute of Technology</p>
+          <p>Statistical mechanics</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">ℏ</div>
+          <h3>Jianshu Cao</h3>
+          <p class="affiliation">Massachusetts Institute of Technology</p>
+          <p>Quantum dynamics</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">ML</div>
+          <h3>Bin Zhang</h3>
+          <p class="affiliation">Massachusetts Institute of Technology</p>
+          <p>Biosimulations and machine learning</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="program" class="section program-section">
+      <div class="section-heading">
+        <p class="section-label">Schedule</p>
+        <h2>Program at a glance</h2>
+        <p class="muted">A detailed schedule will be announced closer to the school.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="date">Mon · Aug 17</span>
+          <h3>Foundations and orientation</h3>
+          <p>Welcome session, participant introductions, and introductory lectures.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">Tue · Aug 18</span>
+          <h3>Electronic structure and quantum information</h3>
+          <p>Modern electronic structure theory, quantum algorithms, and computational perspectives.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">Wed · Aug 19</span>
+          <h3>Statistical mechanics</h3>
+          <p>Equilibrium and nonequilibrium concepts for molecular systems and condensed phases.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">Thu · Aug 20</span>
+          <h3>Quantum dynamics</h3>
+          <p>Open quantum systems, dynamics, spectroscopy, and transport phenomena.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">Fri · Aug 21</span>
+          <h3>Biosimulations and machine learning</h3>
+          <p>Simulation strategies and data-driven methods for complex molecular and biological systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="registration" class="section registration-section">
+      <div class="registration-card">
+        <div>
+          <p class="section-label">Apply</p>
+          <h2>Registration</h2>
+          <p>
+            Please submit your information, CV, and advisor endorsement. Applications will be reviewed by the organizing committee.
+          </p>
+          <p class="form-note">
+            This form is ready for static-site deployment. To collect submissions, replace the <code>action</code> value with a service endpoint such as Google Forms, Formspree, Airtable, or a custom backend.
+          </p>
+        </div>
+        <form class="registration-form" action="#" method="post" enctype="multipart/form-data">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            University
+            <input type="text" name="university" autocomplete="organization" required />
+          </label>
+          <label>
+            Advisor
+            <input type="text" name="advisor" required />
+          </label>
+          <label>
+            CV
+            <input type="file" name="cv" accept=".pdf,.doc,.docx" required />
+          </label>
+          <label>
+            Advisor endorsement
+            <textarea name="advisor_endorsement" rows="5" placeholder="Paste endorsement text or upload a file below." required></textarea>
+          </label>
+          <label>
+            Advisor endorsement file, optional
+            <input type="file" name="endorsement_file" accept=".pdf,.doc,.docx" />
+          </label>
+          <button class="button primary submit" type="submit">Submit registration</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Boston Theoretical Chemistry Summer School</p>
+    <p>Boston, Massachusetts · August 17-21, 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
